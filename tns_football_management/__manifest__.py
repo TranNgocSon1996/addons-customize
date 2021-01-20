@@ -39,10 +39,11 @@ Editions Supported
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': [],
+    'depends': ['account'],
 
     # always loaded
     'data': [
+        'views/partner_view.xml'
     ],
     'images' : [
         # 'static/description/main_screenshot.png'
