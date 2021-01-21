@@ -43,7 +43,10 @@ Editions Supported
 
     # always loaded
     'data': [
-        'views/partner_view.xml'
+        'security/ir.model.access.csv',
+        'views/football_club_views.xml',
+        'views/partner_view.xml',
+        'views/tns_football_management_menuitem.xml'
     ],
     'images' : [
         # 'static/description/main_screenshot.png'

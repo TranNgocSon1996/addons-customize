@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-		<record id="player_action" model="ir.actions.act_window">
-			<field name="name">Player</field>
+		<record id="football_club_action" model="ir.actions.act_window">
+			<field name="name">Football Club</field>
 			<field name="type">ir.actions.act_window</field>
-			<field name="res_model">res.partner</field>
+			<field name="res_model">football.club</field>
 			<field name="view_mode">tree,form</field>
 		</record>
 	</data>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<menuitem id="menu_football" name="Football Manager"
+		web_icon="tns_football_management,static/description/icon.png"
+		sequence="40" groups="base.group_user">
+		<menuitem id="menu_football_club" name="Football Club"
+			action="football_club_action" sequence="1" groups="base.group_user" />
+		<menuitem id="menu_player" name="Player"
+			action="player_action" sequence="2" groups="base.group_user" />
+	</menuitem>
+</odoo>
