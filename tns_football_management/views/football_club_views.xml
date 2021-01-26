@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
+		<record id="football_club_view_tree" model="ir.ui.view">
+			<field name="name">football club tree view</field>
+			<field name="model">football.club</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name"></field>
+					<field name="nickname"></field>
+					<field name="coach_id"></field>
+					<field name="captain_id"></field>
+					<field name="player_total" optional="hide"></field>
+				</tree>
+			</field>
+		</record>
+		<record id="football_club_view_form" model="ir.ui.view">
+			<field name="name">football club form view</field>
+			<field name="model">football.club</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<field name="image_1920" widget='image' class="oe_avatar"
+							options='{"preview_image": "image_128"}' />
+						<div class="oe_title pr-0">
+							<label class="oe_edit_only" for="name"
+								string="Football Club Name" />
+							<h1 class="d-flex flex-row left-content-between">
+								<field name="name"></field>
+							</h1>
+						</div>
+						<group>
+							<group>
+								<field name="nickname"></field>
+								<field name="player_total"></field>
+							</group>
+							<group>
+								<field name="coach_id"></field>
+								<field name="captain_id"></field>
+							</group>
+						</group>
+						<notebook>
+							<page string="Player">
+								<field name="player_ids"></field>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
 		<record id="football_club_action" model="ir.actions.act_window">
 			<field name="name">Football Club</field>
 			<field name="type">ir.actions.act_window</field>
